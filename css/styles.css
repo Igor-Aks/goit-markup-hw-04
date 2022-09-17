@@ -163,6 +163,10 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header-address-link:hover,
@@ -321,9 +325,11 @@ body {
 }
 
 .worker-social-list {
-	display: flex;
-	/* align-items: center; */
-	/* justify-content: center; */
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+	gap: 39px;
+	margin-bottom: 42px;
 }
 
 /* .worker-social-icon {
@@ -331,7 +337,6 @@ body {
 	align-items: center;
 	justify-content: center;
 .} */
-
 
 /* заголовки "our team" */
 .team-title {
