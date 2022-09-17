@@ -172,11 +172,22 @@ body {
 .header-address-link:hover,
 .header-address-link:focus {
   color: var(--accent-color);
+  /* fill: var(--accent-color); */
 }
 
 /* прибираю крайню геометрію для пошти в хедері*/
 .header-address-list .header-address-item + .header-address-item {
   margin-left: 50px;
+}
+
+.header-address-icon {
+  fill: #757575;
+}
+
+/* ховер і фокус для іконок конверт та моб. телефон у хедері */
+.header-address-link:hover .header-address-icon,
+.header-address-link:focus .header-address-icon {
+  fill: var(--accent-color);
 }
 
 .hero {
@@ -328,8 +339,8 @@ body {
   display: flex;
   /* align-items: center; */
   justify-content: center;
-	gap: 39px;
-	margin-bottom: 42px;
+  gap: 39px;
+  margin-bottom: 42px;
 }
 
 /* .worker-social-icon {
