@@ -52,6 +52,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+	/* display: block; */
 }
 
 img {
@@ -172,7 +173,6 @@ body {
 .header-address-link:hover,
 .header-address-link:focus {
   color: var(--accent-color);
-  /* fill: var(--accent-color); */
 }
 
 /* прибираю крайню геометрію для пошти в хедері*/
@@ -180,14 +180,26 @@ body {
   margin-left: 50px;
 }
 
+/* колір іконок іконок конверт та моб. телефон у хедері */
 .header-address-icon {
   fill: #757575;
 }
+
+/* .header-address-link:hover {
+	fill: var(--accent-color);
+	color: var(--accent-color);
+}
+
+.header-address-link:focus {
+	fill: var(--accent-color);
+	color: var(--accent-color);
+} */
 
 /* ховер і фокус для іконок конверт та моб. телефон у хедері */
 .header-address-link:hover .header-address-icon,
 .header-address-link:focus .header-address-icon {
   fill: var(--accent-color);
+
 }
 
 .hero {
@@ -337,17 +349,10 @@ body {
 
 .worker-social-list {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
-  gap: 39px;
-  margin-bottom: 42px;
-}
+  gap: 10px;
 
-/* .worker-social-icon {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-.} */
+}
 
 /* заголовки "our team" */
 .team-title {
@@ -381,11 +386,40 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
+	margin-bottom: 30px;
 }
 
 /* div для опису працівника */
 .worker-description {
   padding: 30px;
+}
+
+.worker-social-item {
+	width: 44px;
+	height: 44px;
+	background: var(--primary-white-color);
+	display: flex;
+	justify-content: center;
+	/* align-items: center; */
+	/* border-radius: 50%; */
+}
+
+.worker-social-link {
+	width: 44px;
+	height: 44px;
+	padding: 12px;
+	background-color: var(--primary-white-color);
+	/* background-color: var(--accent-color); */
+	fill: #AFB1B8;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+.worker-social-link:hover,
+.worker-social-link:focus {
+	fill: var(--primary-white-color);
+	background-color: var(--accent-color);
 }
 
 /* приховуємо заголовок "our projects" */
