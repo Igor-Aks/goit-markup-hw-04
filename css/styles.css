@@ -52,7 +52,6 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
-  /* display: block; */
 }
 
 img {
@@ -280,15 +279,10 @@ body {
 
 .icon-features-background {
   display: flex;
-  /* margin-left: auto;
-	margin-right: auto; */
   justify-content: center;
   align-items: center;
   width: 270px;
   height: 120px;
-  /* left: 215px;
-  top: 774px; */
-
   background: #f5f4fa;
   border-radius: 4px;
 }
@@ -404,19 +398,87 @@ body {
 .worker-social-link {
   width: 44px;
   height: 44px;
-  padding: 12px;
+  /* padding: 12px; */
   background-color: var(--primary-white-color);
   /* background-color: var(--accent-color); */
   fill: #afb1b8;
   border-radius: 50%;
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.worker-social-icon {
+  width: 20px;
+  height: 20px;
 }
 
 .worker-social-link:hover,
 .worker-social-link:focus {
   fill: var(--primary-white-color);
   background-color: var(--accent-color);
+}
+
+.our-clients-title {
+  color: var(--title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.our-clients-list {
+  display: flex;
+  gap: 30px;
+  /* flex-shrink: 0; */
+}
+
+.our-clients-item {
+  width: 170px;
+  height: 92px;
+  /* border: 1px solid #afb1b8;
+  border-radius: 4px; */
+
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+}
+
+/* .our-clients-item:hover,
+.our-clients-item:focus {
+  border-color: var(--accent-color);
+} */
+
+.our-clients-link {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #afb1b8;
+  background-color: var(--primary-white-color);
+  /* background-size: contain; */
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.our-clients-link:hover .our-clinets-icon,
+.our-clients-link:focus .our-clinets-icon {
+  fill: var(--accent-color);
+}
+
+.our-clients-link:hover,
+.our-clients-link:focus {
+  border: 1px solid #2196f3;
+}
+
+.our-clinets-icon {
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
 }
 
 /* приховуємо заголовок "our projects" */
