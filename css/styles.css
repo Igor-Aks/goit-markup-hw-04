@@ -341,7 +341,7 @@ body {
 
 .worker-social-list {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 10px;
 }
 
@@ -391,31 +391,29 @@ body {
   background: var(--primary-white-color);
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-  /* border-radius: 50%; */
+	border-radius: 50%;
 }
 
 .worker-social-link {
   width: 44px;
   height: 44px;
-  /* padding: 12px; */
-  background-color: var(--primary-white-color);
-  /* background-color: var(--accent-color); */
-  fill: #afb1b8;
   border-radius: 50%;
+  color: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--primary-white-color);
 }
 
 .worker-social-icon {
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 .worker-social-link:hover,
 .worker-social-link:focus {
-  fill: var(--primary-white-color);
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
@@ -439,12 +437,8 @@ body {
 .our-clients-item {
   width: 170px;
   height: 92px;
-  /* border: 1px solid #afb1b8;
-  border-radius: 4px; */
 
   display: flex;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 /* .our-clients-item:hover,
@@ -460,7 +454,6 @@ body {
   align-items: center;
   color: #afb1b8;
   background-color: var(--primary-white-color);
-  /* background-size: contain; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
@@ -634,4 +627,64 @@ body {
 .footer-address-link:hover,
 .footer-address-link:focus {
   color: var(--accent-color);
+}
+
+/* секція в футері з логотипом та адресою  */
+.footer-address {
+  margin-right: 70px;
+}
+
+.footer-action-word {
+  color: var(--primary-white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  margin-bottom: 20px;
+}
+
+/* секція в футері з іконками на соц. мережі */
+.container.footer-content {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-list {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social-item {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+
+  display: flex;
+}
+
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: var(--primary-white-color);
+  /* fill: yellow; */
+  /* background: pink; */
+  /* fill:var(--primary-white-color); */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
+}
+
+.footer-social-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
 }
