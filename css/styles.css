@@ -195,6 +195,7 @@ body {
 } */
 
 /* ховер і фокус для іконок конверт та моб. телефон у хедері */
+/* когда ховерим по ссылке, иконка меняет цвет */
 .header-address-link:hover .header-address-icon,
 .header-address-link:focus .header-address-icon {
   fill: var(--accent-color);
@@ -391,7 +392,7 @@ body {
   background: var(--primary-white-color);
   display: flex;
   justify-content: center;
-	border-radius: 50%;
+  border-radius: 50%;
 }
 
 .worker-social-link {
@@ -411,10 +412,17 @@ body {
   fill: currentColor;
 }
 
+
 .worker-social-link:hover,
 .worker-social-link:focus {
-  color: var(--primary-white-color);
+  /* color: var(--primary-white-color); */
   background-color: var(--accent-color);
+}
+
+/* когда ховерим по ссылке, иконка меняет цвет */
+.worker-social-link:hover .worker-social-icon,
+.worker-social-link:focus .worker-social-icon {
+  fill: var(--primary-white-color);
 }
 
 .our-clients-title {
