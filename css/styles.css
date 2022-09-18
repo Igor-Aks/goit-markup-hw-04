@@ -389,21 +389,22 @@ body {
 .worker-social-item {
   width: 44px;
   height: 44px;
-  background: var(--primary-white-color);
+  /* background: var(--primary-white-color); */
   display: flex;
   justify-content: center;
   border-radius: 50%;
 }
 
 .worker-social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
   color: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--primary-white-color);
+  /* background-color: var(--primary-white-color); */
+  /* color:var(--primary-white-color) */
 }
 
 .worker-social-icon {
@@ -412,9 +413,8 @@ body {
   fill: currentColor;
 }
 
-
-.worker-social-link:hover,
-.worker-social-link:focus {
+.worker-social-item:hover,
+.worker-social-item:focus {
   /* color: var(--primary-white-color); */
   background-color: var(--accent-color);
 }
@@ -676,7 +676,7 @@ body {
 .footer-social-link {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
+  /* border-radius: 50%; */
   color: var(--primary-white-color);
   /* fill: yellow; */
   /* background: pink; */
@@ -686,8 +686,8 @@ body {
   align-items: center;
 }
 
-.footer-social-link:hover,
-.footer-social-link:focus {
+.footer-social-item:hover,
+.footer-social-item:focus {
   background-color: var(--accent-color);
 }
 
