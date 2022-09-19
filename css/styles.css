@@ -52,6 +52,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  /* display: block; */
 }
 
 img {
@@ -183,16 +184,6 @@ body {
 .header-address-icon {
   fill: #757575;
 }
-
-/* .header-address-link:hover {
-	fill: var(--accent-color);
-	color: var(--accent-color);
-}
-
-.header-address-link:focus {
-	fill: var(--accent-color);
-	color: var(--accent-color);
-} */
 
 /* ховер і фокус для іконок конверт та моб. телефон у хедері */
 /* когда ховерим по ссылке, иконка меняет цвет */
@@ -342,7 +333,6 @@ body {
 
 .worker-social-list {
   display: flex;
-  /* justify-content: center; */
   gap: 10px;
 }
 
@@ -368,7 +358,6 @@ body {
   text-align: center;
 
   margin-bottom: 10px;
-  /* min-width: 129px; */
 }
 
 /* текст опису посади співробітника */
@@ -398,13 +387,11 @@ body {
 .worker-social-link {
   width: 100%;
   height: 100%;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   color: #afb1b8;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--primary-white-color); */
-  /* color:var(--primary-white-color) */
 }
 
 .worker-social-icon {
@@ -413,13 +400,12 @@ body {
   fill: currentColor;
 }
 
-.worker-social-item:hover,
-.worker-social-item:focus {
-  /* color: var(--primary-white-color); */
+.worker-social-link:hover,
+.worker-social-link:focus {
   background-color: var(--accent-color);
 }
 
-/* когда ховерим по ссылке, иконка меняет цвет */
+/* когда ховерим по ссылке иконок соц. сетей, иконка меняет цвет */
 .worker-social-link:hover .worker-social-icon,
 .worker-social-link:focus .worker-social-icon {
   fill: var(--primary-white-color);
@@ -439,7 +425,6 @@ body {
 .our-clients-list {
   display: flex;
   gap: 30px;
-  /* flex-shrink: 0; */
 }
 
 .our-clients-item {
@@ -448,11 +433,6 @@ body {
 
   display: flex;
 }
-
-/* .our-clients-item:hover,
-.our-clients-item:focus {
-  border-color: var(--accent-color);
-} */
 
 .our-clients-link {
   width: 100%;
@@ -537,15 +517,19 @@ body {
   gap: 30px;
 }
 
+/* даю посиланню властивість block, бо без неї не буде працювати hover */
+.our-projects-link {
+  display: block;
+}
+
 /* ефект тіні при наведенні мишею (ховер) на картки "наші проекти" */
-.our-projects-item:hover {
+.our-projects-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .our-projects-item {
   width: 370px;
-  /* flex-basis: calc((100% - 60px) / 3); */
 }
 
 /* div для опису проекта */
@@ -642,6 +626,7 @@ body {
   margin-right: 70px;
 }
 
+/* слоган "ПРИЄДНУЙТЕСЬ" */
 .footer-action-word {
   color: var(--primary-white-color);
   font-weight: 700;
@@ -676,18 +661,15 @@ body {
 .footer-social-link {
   width: 100%;
   height: 100%;
-  /* border-radius: 50%; */
+  border-radius: 50%;
   color: var(--primary-white-color);
-  /* fill: yellow; */
-  /* background: pink; */
-  /* fill:var(--primary-white-color); */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.footer-social-item:hover,
-.footer-social-item:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: var(--accent-color);
 }
 
